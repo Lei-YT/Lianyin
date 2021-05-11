@@ -1,0 +1,70 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_id" data-rule="required" data-source="order/index" class="form-control selectpage" name="row[order_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_type" data-rule="required" class="form-control" name="row[order_type]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('User_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-user_id" data-rule="required" data-source="user/user/index" data-field="nickname" class="form-control selectpage" name="row[user_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_id" data-rule="required" data-source="design/index" class="form-control selectpage" name="row[design_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_id" data-rule="required" data-source="print/index" class="form-control selectpage" name="row[print_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-level" data-rule="required" class="form-control" name="row[level]" type="number" value="2">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Idea_level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-idea_level" data-rule="required" class="form-control" name="row[idea_level]" type="number" value="1">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Time_level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-time_level" data-rule="required" class="form-control" name="row[time_level]" type="number" value="1">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Service_level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-service_level" data-rule="required" class="form-control" name="row[service_level]" type="number" value="1">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-content" data-rule="required" class="form-control" name="row[content]" type="text">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

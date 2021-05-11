@@ -1,0 +1,222 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_type" data-rule="required" class="form-control" name="row[order_type]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_no')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_no" data-rule="required" class="form-control" name="row[order_no]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order_title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_title" data-rule="required" class="form-control" name="row[order_title]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_status" data-rule="required" class="form-control" name="row[design_status]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_status" data-rule="required" class="form-control" name="row[print_status]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pay_way')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pay_way" data-rule="required" class="form-control" name="row[pay_way]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Total_money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-total_money" data-rule="required" class="form-control" name="row[total_money]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('User_money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-user_money" data-rule="required" class="form-control" name="row[user_money]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('User_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-user_id" data-rule="required" data-source="user/user/index" data-field="nickname" class="form-control selectpage" name="row[user_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_mode')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_mode" data-rule="required" class="form-control" name="row[design_mode]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_mode_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_mode_id" data-rule="required" data-source="design/mode/index" class="form-control selectpage" name="row[design_mode_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_budget_money')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_budget_money" data-rule="required" class="form-control" step="0.01" name="row[design_budget_money]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_type_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_type_id" data-rule="required" data-source="design/type/index" class="form-control selectpage" name="row[design_type_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_type_text')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_type_text" data-rule="required" class="form-control" name="row[design_type_text]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_day')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_day" data-rule="required" class="form-control" name="row[design_day]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_size_weight')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_size_weight" data-rule="required" class="form-control" name="row[design_size_weight]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_size_height')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_size_height" data-rule="required" class="form-control" name="row[design_size_height]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_file')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-design_file" data-rule="required" class="form-control" size="50" name="row[design_file]" type="text">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="faupload-design_file" class="btn btn-danger faupload" data-input-id="c-design_file" data-multiple="false" data-preview-id="p-design_file"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-design_file" class="btn btn-primary fachoose" data-input-id="c-design_file" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-design_file"></span>
+            </div>
+            <ul class="row list-inline faupload-preview" id="p-design_file"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Design_desc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-design_desc" data-rule="required" class="form-control" name="row[design_desc]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_mode')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_mode" data-rule="required" class="form-control" name="row[print_mode]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_mode_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_mode_id" data-rule="required" data-source="print/mode/index" class="form-control selectpage" name="row[print_mode_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_day')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_day" data-rule="required" class="form-control" name="row[print_day]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_type_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_type_id" data-rule="required" data-source="print/type/index" class="form-control selectpage" name="row[print_type_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_type_text')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_type_text" data-rule="required" class="form-control" name="row[print_type_text]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_material_text')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_material_text" data-rule="required" class="form-control" name="row[print_material_text]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_size_text')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_size_text" data-rule="required" class="form-control" name="row[print_size_text]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_count_text')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_count_text" data-rule="required" class="form-control" name="row[print_count_text]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Print_desc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-print_desc" data-rule="required" class="form-control" name="row[print_desc]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address_province')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address_province" data-rule="required" class="form-control" name="row[address_province]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address_city')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class='control-relative'><input id="c-address_city" data-rule="required" class="form-control" data-toggle="city-picker" name="row[address_city]" type="text"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address_area')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address_area" data-rule="required" class="form-control" name="row[address_area]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address_detail')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address_detail" data-rule="required" class="form-control" name="row[address_detail]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address_name" data-rule="required" class="form-control" name="row[address_name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address_phone')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address_phone" data-rule="required" class="form-control" name="row[address_phone]" type="text">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
