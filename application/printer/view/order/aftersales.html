@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>{$site.name}</title>
+        <link rel="shortcut icon" href="__CDN__/assets/img/favicon.ico" />
+        <!-- Bootstrap Core CSS -->
+        <link href="__CDN__/assets/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="__CDN__/assets/css/printer/index.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://cdn.staticfile.org/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body id="page-top">
+
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="background-color: #FFFFFF;height: 73px;">
+            <div class="top-dh">
+                
+                <div class="logo"><img src="__CDN__/assets/img/printer/logo.jpg"></div>
+                <div class="top-right-box">
+                    <div class="top-search-box"><img src="__CDN__/assets/img/printer/search.png">输入订单编号、客户名称或客户手机号</div>
+                    <div class="top-message-box"><img src="__CDN__/assets/img/printer/message.png"></div>
+                    <div class="top-message-box"><img src="__CDN__/assets/img/printer/message1.png"></div>
+                    <div class="top-head-box"><img src="__CDN__/assets/img/printer/demo.jpg"></div>
+                    <div class="top-username-box">
+                        <div class="top-username">龙樱初雪</div>
+                        <div class="top-userid">f12345678</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main id="mainbody">
+            <div class="main-box">
+                <div class="menu-list">
+                    <div class="nav">
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('printer/index/index')}"><img src="__CDN__/assets/img/printer/myindexm.png">我的主页</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('printer/order/index')}"><img src="__CDN__/assets/img/printer/orderm.png">任务管理</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('printer/comment/index')}"><img src="__CDN__/assets/img/printer/commentm.png">评价管理</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link active" href="{:url('printer/order/aftersales')}"><img src="__CDN__/assets/img/printer/shouhou.png">售后投诉</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('printer/transaction/index')}"><img src="__CDN__/assets/img/printer/shouyim.png">收益记录</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('printer/info/index')}"><img src="__CDN__/assets/img/printer/infom.png">基本信息</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('printer/index/service')}"><img src="__CDN__/assets/img/printer/kefum.png">客服反馈</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="after-sales-box">
+                  <div class="after-sales-top">
+                      <div class="after-tabs">
+                        <div class="after-tabs-item after-tabs-item-active">全部</div>
+                        <div class="after-tabs-item">退款中</div>
+                        <div class="after-tabs-item">已退款</div>
+                        <div class="after-tabs-item">售后中</div>
+                        <div class="after-tabs-item">投诉中</div>
+                        <div class="after-tabs-item">已完结</div>
+                      </div>
+                      <div class="after-sales-sort">
+                        默认排序
+                      </div>
+                  </div>
+                  <div class="after-sales-list">
+                      <div class="comment-item">
+                        <div>
+                            <div class="comment-title">界面设计五六七八九十</div>
+                            <div>21042319524701</div>
+                        </div>
+                        <div>
+                            <div>项目类型</div>
+                            <div>名片</div>
+                        </div>
+                        <div>
+                            <div>金额</div>
+                            <div style="color: #E62F2F;">￥100.00</div>
+                        </div>
+                        <div>
+                            <div>发布时间</div>
+                            <div>2021-05-03 15:08:35</div>
+                        </div>
+                        <div>
+                            <div>服务方</div>
+                            <div style="color: #5A71FB;">小明设计</div>
+                        </div>
+                        <div>
+                            <div>状态</div>
+                            <div style="color: #E62F2F;">退款中</div>
+                        </div>
+                        <div class="after-sales-btn">
+                           取消退款
+                        </div>
+                        <div class="after-sales-more">
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                        </div>
+                      </div>
+                      <div class="comment-item">
+                        <div>
+                            <div class="comment-title">界面设计五六七八九十</div>
+                            <div>21042319524701</div>
+                        </div>
+                        <div>
+                            <div>项目类型</div>
+                            <div>名片</div>
+                        </div>
+                        <div>
+                            <div>金额</div>
+                            <div style="color: #E62F2F;">￥100.00</div>
+                        </div>
+                        <div>
+                            <div>发布时间</div>
+                            <div>2021-05-03 15:08:35</div>
+                        </div>
+                        <div>
+                            <div>服务方</div>
+                            <div style="color: #5A71FB;">小明设计</div>
+                        </div>
+                        <div>
+                            <div>状态</div>
+                            <div style="color: #E62F2F;">退款中</div>
+                        </div>
+                        <div class="after-sales-btn">
+                           取消退款
+                        </div>
+                        <div class="after-sales-more">
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                        </div>
+                      </div>
+                      <div class="comment-item">
+                        <div>
+                            <div class="comment-title">界面设计五六七八九十</div>
+                            <div>21042319524701</div>
+                        </div>
+                        <div>
+                            <div>项目类型</div>
+                            <div>名片</div>
+                        </div>
+                        <div>
+                            <div>金额</div>
+                            <div style="color: #E62F2F;">￥100.00</div>
+                        </div>
+                        <div>
+                            <div>发布时间</div>
+                            <div>2021-05-03 15:08:35</div>
+                        </div>
+                        <div>
+                            <div>服务方</div>
+                            <div style="color: #5A71FB;">小明设计</div>
+                        </div>
+                        <div>
+                            <div>状态</div>
+                            <div style="color: #E62F2F;">退款中</div>
+                        </div>
+                        <div class="after-sales-btn">
+                           取消退款
+                        </div>
+                        <div class="after-sales-more">
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                        </div>
+                      </div>
+                      <div class="comment-item">
+                        <div>
+                            <div class="comment-title">界面设计五六七八九十</div>
+                            <div>21042319524701</div>
+                        </div>
+                        <div>
+                            <div>项目类型</div>
+                            <div>名片</div>
+                        </div>
+                        <div>
+                            <div>金额</div>
+                            <div style="color: #E62F2F;">￥100.00</div>
+                        </div>
+                        <div>
+                            <div>发布时间</div>
+                            <div>2021-05-03 15:08:35</div>
+                        </div>
+                        <div>
+                            <div>服务方</div>
+                            <div style="color: #5A71FB;">小明设计</div>
+                        </div>
+                        <div>
+                            <div>状态</div>
+                            <div style="color: #E62F2F;">退款中</div>
+                        </div>
+                        <div class="after-sales-btn">
+                           取消退款
+                        </div>
+                        <div class="after-sales-more">
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                        </div>
+                      </div>
+                      <div class="comment-item">
+                        <div>
+                            <div class="comment-title">界面设计五六七八九十</div>
+                            <div>21042319524701</div>
+                        </div>
+                        <div>
+                            <div>项目类型</div>
+                            <div>名片</div>
+                        </div>
+                        <div>
+                            <div>金额</div>
+                            <div style="color: #E62F2F;">￥100.00</div>
+                        </div>
+                        <div>
+                            <div>发布时间</div>
+                            <div>2021-05-03 15:08:35</div>
+                        </div>
+                        <div>
+                            <div>服务方</div>
+                            <div style="color: #5A71FB;">小明设计</div>
+                        </div>
+                        <div>
+                            <div>状态</div>
+                            <div style="color: #E62F2F;">退款中</div>
+                        </div>
+                        <div class="after-sales-btn">
+                           取消退款
+                        </div>
+                        <div class="after-sales-more">
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                        </div>
+                      </div>
+                      <div class="comment-item">
+                        <div>
+                            <div class="comment-title">界面设计五六七八九十</div>
+                            <div>21042319524701</div>
+                        </div>
+                        <div>
+                            <div>项目类型</div>
+                            <div>名片</div>
+                        </div>
+                        <div>
+                            <div>金额</div>
+                            <div style="color: #E62F2F;">￥100.00</div>
+                        </div>
+                        <div>
+                            <div>发布时间</div>
+                            <div>2021-05-03 15:08:35</div>
+                        </div>
+                        <div>
+                            <div>服务方</div>
+                            <div style="color: #5A71FB;">小明设计</div>
+                        </div>
+                        <div>
+                            <div>状态</div>
+                            <div style="color: #E62F2F;">退款中</div>
+                        </div>
+                        <div class="after-sales-btn">
+                           取消退款
+                        </div>
+                        <div class="after-sales-more">
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                        </div>
+                      </div>
+                      <div class="comment-item">
+                        <div>
+                            <div class="comment-title">界面设计五六七八九十</div>
+                            <div>21042319524701</div>
+                        </div>
+                        <div>
+                            <div>项目类型</div>
+                            <div>名片</div>
+                        </div>
+                        <div>
+                            <div>金额</div>
+                            <div style="color: #E62F2F;">￥100.00</div>
+                        </div>
+                        <div>
+                            <div>发布时间</div>
+                            <div>2021-05-03 15:08:35</div>
+                        </div>
+                        <div>
+                            <div>服务方</div>
+                            <div style="color: #5A71FB;">小明设计</div>
+                        </div>
+                        <div>
+                            <div>状态</div>
+                            <div style="color: #E62F2F;">退款中</div>
+                        </div>
+                        <div class="after-sales-btn">
+                           取消退款
+                        </div>
+                        <div class="after-sales-more">
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                          <div class="after-sales-more-d"></div>
+                        </div>
+                      </div>
+                      <div>
+                          <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                      </div>
+                  </div>
+                  
+                </div>
+                
+            </div>
+        </main>
+        
+
+        <script src="__CDN__/assets/libs/jquery/dist/jquery.min.js"></script>
+
+        <script src="__CDN__/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

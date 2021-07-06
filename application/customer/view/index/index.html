@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>{$site.name}</title>
+        <link rel="shortcut icon" href="__CDN__/assets/img/favicon.ico" />
+        <!-- Bootstrap Core CSS -->
+        <link href="__CDN__/assets/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="__CDN__/assets/css/customer/index.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://cdn.staticfile.org/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body id="page-top">
+
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="background-color: #FFFFFF;height: 73px;">
+            <div class="top-dh">
+                
+                <div class="logo"><img src="__CDN__/assets/img/customer/logo.jpg"></div>
+                <div class="top-right-box">
+                    <div class="top-search-box"><img src="__CDN__/assets/img/customer/search.png">输入订单编号、客户名称或客户手机号</div>
+                    <div class="top-message-box"><img src="__CDN__/assets/img/customer/message.png"></div>
+                    <div class="top-message-box"><img src="__CDN__/assets/img/customer/message1.png"></div>
+                    <div class="top-head-box"><img src="__CDN__/assets/img/customer/demo.jpg"></div>
+                    <div class="top-username-box">
+                        <div class="top-username">龙樱初雪</div>
+                        <div class="top-userid">f12345678</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main id="mainbody">
+            <div class="main-box">
+                <div class="menu-list">
+                    <div class="nav">
+                      <div class="nav-item">
+                        <a class="nav-link active" href="{:url('customer/index/index')}"><img src="__CDN__/assets/img/customer/myindex.png">我的主页</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('customer/order/index')}"><img src="__CDN__/assets/img/customer/orderm.png">订单管理</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('customer/comment/index')}"><img src="__CDN__/assets/img/customer/commentm.png">评价管理</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('customer/order/aftersales')}"><img src="__CDN__/assets/img/customer/shouhoum.png">售后投诉</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('customer/transaction/index')}"><img src="__CDN__/assets/img/customer/shouyim.png">交易记录</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('customer/info/index')}"><img src="__CDN__/assets/img/customer/infom.png">基本信息</a>
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link" href="{:url('customer/index/service')}"><img src="__CDN__/assets/img/customer/kefum.png">客服反馈</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="user-box">
+                    <div class="user-title">形象展示</div>
+                    <div class="user-pic">
+                        <img src="__CDN__/assets/img/customer/demo.jpg">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-head">
+                            <img src="__CDN__/assets/img/customer/demo.jpg">
+                        </div>
+                        <div class="user-name-num">
+                            <div class="user-name">龙樱初雪</div>
+                            <div class="user-num-box">
+                                <div class="user-level">Lv.46</div>
+                                <div class="user-num">f12345678</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-sign">个性签名，设计师是对设计事物的人的一种泛称。</div>
+                </div>
+                <div class="user-charts-pics-box">
+                    <div class="user-charts" id="echarts">
+                        
+                    </div>
+                    <div class="user-pics">
+                        <div class="pics-title">
+                            <div>照片墙</div>
+                            <div class="edit-pics">编辑</div>
+                        </div>
+                        <div class="pics-list">
+                            <div class="pics-item"></div>
+                            <div class="pics-item"></div>
+                            <div class="pics-item"></div>
+                        </div>
+                        <div class="pics-list">
+                            <div class="pics-item"></div>
+                            <div class="pics-item"></div>
+                            <div class="pics-item"></div>
+                        </div>
+                        <div class="pics-list">
+                            <div class="pics-item"></div>
+                            <div class="pics-item"></div>
+                            <div class="pics-item"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        
+
+        <script src="__CDN__/assets/libs/jquery/dist/jquery.min.js"></script>
+
+        <script src="__CDN__/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+         <script type="text/javascript">
+var dom = document.getElementById("echarts");
+var myChart = echarts.init(dom);
+var app = {};
+
+var option;
+
+option = {
+    title: {
+        text: ''
+    },
+    legend: {
+        data: []
+    },
+    radar: {
+        // shape: 'circle',
+        indicator: [
+            { name: '下单', max: 6500},
+            { name: '时效', max: 16000},
+            { name: '消费', max: 30000},
+            { name: '好评', max: 38000},
+            { name: '信誉', max: 52000},
+            { name: '资历', max: 25000}
+        ]
+    },
+    series: [{
+        name: '',
+        type: 'radar',
+        data: [
+            {
+                value: [4200, 3000, 20000, 35000, 50000, 18000],
+                name: ''
+            },
+            {
+                value: [5000, 14000, 28000, 26000, 42000, 21000],
+                name: ''
+            }
+        ]
+    }]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+
+        </script>
+    </body>
+
+</html>
